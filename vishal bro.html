@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 150px;
+            width: 100%;
+            padding: 40px;
+            
+        }
+
+        .bord {
+            border: solid 1px gray;
+            width: 340px;
+            border-radius: 10px;
+           
+        }
+
+        #jk {
+            font-size: 50px;
+            color: red;
+            padding: 10px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        #lock {
+            color: black;
+            margin-left: 300px;
+
+        }
+
+        #son {
+            margin-left: 300px;
+            color: black;
+
+        }
+
+        .jo {
+            margin-top: 20px;
+        }
+
+        .bt {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        .box {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 13px;
+            margin-left: 20px;
+
+        }
+
+        .wel {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        .ss {
+            padding: 10px;
+        }
+
+        .not {
+            padding: 15px;
+            margin-left:40px;
+            font-size: 13px;
+        }
+        .img{
+            background-size: cover;
+            background-repeat: no-repeat;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <form >
+        <div class="bord">
+           
+            <div>
+                <h1 class="wel">welcome</h1>
+            </div>
+            <div>
+                <span class="bi bi-person-circle" id="jk"></span>
+            </div>
+            <div class="ss">
+                <div>
+                    <span class="bi bi-person" id="son"></span>
+                </div>
+                <div >
+                    <input class="form-control w-100" placeholder="User Name/ID" type="text">
+                </div>
+                <div class="jo">
+                    <span class="bi bi-lock" id="lock"></span>
+                </div>
+                <div>
+                    <input class="form-control w-100" placeholder="Password" type="text">
+                </div>
+            </div>
+            <div class="box">
+                <span><input type="checkbox"><label>Stay signed in</label></span>&nbsp;&nbsp;&nbsp;
+                <span><input type="checkbox"><label> Foegot User ID Passward? </label></span>
+            </div>
+
+            <div class="bt">
+                <button class="w-100 btn btn-danger ">Login</button>
+            </div>
+            <div class="not">
+                <span>Not ragisterd yet?</span>&nbsp;&nbsp;&nbsp;
+                <span>Create your account</span>&nbsp;&nbsp;
+            </div>
+
+
+        </div>
+    </form>
+
+</body>
+
+</html>
