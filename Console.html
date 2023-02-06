@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function DeleteClick(){
+            console.warn("Delete Button Clicked");
+           flag = confirm("Delete Record\nRecord will be deleted\nAre you sure?");
+           if(flag==true)
+           {
+              console.error("OK Clicked..");
+              document.querySelector("h1").outerHTML = "<font size='8' color='red'>Record Deleted Successfully..</font>";
+           } else {
+             alert("You canceled..");
+             console.log("Cancel Clicked..");
+           }
+        }
+
+        function SaveClick(){
+            console.warn("Save Button Clicked")
+            flag=confirm("Save Record\nRecord Will be save\n Save?")
+            if(flag==true)
+            {
+                console.error("OK Clicked..");
+                document.querySelector("h2").outerHTML="<font size='8'color='green'>Record Saved Successfully..</font>";
+            }else{
+                alert("You canceled..");
+                console.log("Cancel Clicked..");
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="DeleteClick()">Delete</button>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <h1></h1>
+    </div>
+    <button onclick="SaveClick()">Save</button>
+    <div style="display: flex; justify-content: center; align-items: center;"></div>
+    <h2></h2>
+</body>
+</html>
