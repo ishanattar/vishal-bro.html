@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function SaveClick() {
+            flag = confirm("Save Record\nRecord will be save\n save?");
+            if(flag==true) {
+                document.querySelector("h1").outerHTML = "<p><font size='8' color='black'>Record Saved succefully..</font></p>";
+            }
+            else {
+                alert("You canceled..");
+            }
+        }
+        function DeleteClick(){
+            flag= confirm("delete Record\nRecord will be save\n Are you sure?")
+            if(flag==true){
+                document.querySelector("h2").outerHTML= "<p><font size='7' color='green'>Record Delete succefully..</font></p>";
+            }
+            else{
+                alert("you canceled..")
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <button onclick="SaveClick()">Save</button>
+    <div style="display: flex;justify-content: center;align-items: center;  text-align: center;"></div>
+    <h1></h1> 
+    <button onclick="DeleteClick()">Delete</button>
+    <div style="text-align: center;"></div>
+    <h2></h2>
+</body>
+
+</html>
