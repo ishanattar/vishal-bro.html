@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function SaveClick(){
+            flag=confirm("Save record\nRecord Will be Save\n save?")  
+            if(flag==true) 
+             {
+                document.querySelector("p").innerHTML="<font size='5' color='red'>Record Save succefully..</font>";
+             }else{
+                alert("you canceled");
+             }
+        }
+        
+
+    </script>
+</head>
+<body>
+    <button onclick="SaveClick()">Save</button>
+    <div style="display: flex;justify-content: center;align-items: center; height: 50px;">
+        <p></p>
+
+    </div>
+    
+</body>
+</html> 
