@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function SubmitClick(){
+            var rate = parseFloat(document.getElementById("Rate").value);
+            document.write("You interest rate is increase by 1  and it is :" + (rate+1));
+        }
+        function ParcentClick(){
+            var percentage =parseFloat(document.getElementById ("percentage").value);
+            document.write("You 12 parcentage is increase by 2 and it is :" + (percentage+20));
+        }
+    </script>
+</head>
+<body>
+    Interest Rate : <input type="number" min="10.24" max="18.34" step="0.2" value="10.24" id="Rate"> <button onclick="SubmitClick()">Submit</button>
+
+    10 percentage : <input type="number" min="65" max="100" step="20" value="65" id="percentage"> <button onclick="ParcentClick()">Parcent</button>
+
+
+
+</body>
+</html>
