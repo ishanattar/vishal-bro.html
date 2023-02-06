@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function bodyload() {
+            window.document.images[0].src = "../images/img4.jpg";
+            window.document.forms[0].elements[0].value = "Register";
+            window.document.forms[1].elements[0].value = "save";
+            window.document.forms[2].elements[1].value = "Login";
+            window.document.forms[3].elements[0].value = "poss";
+
+        }
+    </script>
+</head>
+
+<body onload="bodyload()">
+    <div>
+        <img width="200" height="200" border="3">
+    </div>
+    <div>
+        <form>
+            <h2>Register</h2>
+            Your Name : <input type="button"> <input type="text">
+        </form>
+    </div>
+    <div>
+        <form>
+            <h1>Save</h1>
+            <input type="button"><input type="text">
+        </form>
+    </div>
+    <div>
+        <form>
+            <h2>Login</h2>
+            Your Email : <input type="email"> <input type="button">
+        </form>
+    </div>
+    <div>
+        <form>
+            <h2>poss</h2>
+            Your ishan : <input type="email"> <input type="button">
+        </form>
+    </div>
+</body>
+
+</html>
